@@ -145,6 +145,9 @@ th {
         display: block;
         text-align: center;
     }
+    .info-text {
+        margin-left: 0;
+    }
 }
 @media (max-width: 650px) {
     .form-row .form-group {
