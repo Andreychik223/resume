@@ -5,69 +5,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="html, course, css, tags" >
     <meta name="description" content="Это моя первая сайт - визитка! ">
+    <link rel="stylesheet" href="css/ctyle.css">
     <title>Визитка</title>
 </head>
 <body>
-    <img src="img/foto.jpg" width="250px">
-    <h1>Андрей Геращенков</h1>
-    <p>Я студент 4 курса по <strong> программирование в <em> компьютерных системах! </em></strong></p>
-    <p><em>Я люблю заниматься спортом, читать и путешествовать</em></p>
-    <h4>Список социальных сетей:</h4>
-    <a href="https://vk.com/mr.andreychik" target="_blank">Вконтакте</a>|
-    <a href="https://vk.com/mr.andreychik" target="_blank">Telegram</a>|
-    <a href="https://vk.com/mr.andreychik" target="_blank">Youtube</a>|
-    <p>Мои хобби:</p>
-    <ol>
-        <li>Спорт</li>
-        <li>Путешествие</li>
-        <li>Чтение</li>
-        <li>Рыбалка</li>
-    </ol>
-    <table>
-        <thead>
-            <tr>
-                <th>Название</th>
-                <th>Должность</th>
-                <th>Год</th>
-            </tr>
-        </thead>
-        <tr>
-            <td>Цех</td>
-            <td>Ранорабочий</td>
-            <td>2022</td>
-        </tr>
-        <tr>
-            <td>Ресторан</td>
-            <td>Официант</td>
-            <td>2020</td>
-        </tr>
-        <tr>
-            <td>Пятерочка</td>
-            <td>Водитель</td>
-            <td>2024</td>
-        </tr>
-    </table>
-    <h1>Связаться со мной</h1>
-    <form action="">
-        <div>
-            <label for="name">Имя</label>
-            <input type="text" id="name" placeholder="Введите ваше Имя">
+    <div class="container">
+        <div class="info">
+            <img src="img/foto.jpg" width="250px">
+            <div class="info-text">
+                <h1>Андрей Геращенков</h1>
+                <p>Я студент 4 курса по <strong> программирование в <em> компьютерных системах! </em></strong></p>
+                <p><em>Я люблю заниматься спортом, читать и путешествовать</em></p>
+                <h4 class="seti">Список социальных сетей:</h4>
+                <a href="https://vk.com/mr.andreychik" target="_blank">Вконтакте</a>|
+                <a href="https://t.me/cardsmessage" target="_blank">Telegram</a>|
+                <a href="https://www.youtube.com/@user-ch5nj8bb3u/featured" target="_blank">Youtube</a>
+            </div>
         </div>
-        <div>
-            <label for="email">email</label>
-            <input type="email" id="email" placeholder="Введите ваш email">
+        <div class="card">
+            <div class="hobby">
+                <p>Мои хобби:</p>
+                <ol class="list">
+                    <li>Спорт</li>
+                    <li>Путешествие</li>
+                    <li>Чтение</li>
+                    <li>Игры</li>
+                </ol>
+            </div>
+            <div class="work">
+                <h2>Опыт работы</h2>
+                <table class="table">
+                    <!-- <thead>
+                        <tr>
+                            <th>Название</th>
+                            <th>Должность</th>
+                            <th>Год</th>
+                        </tr>
+                    </thead> -->
+                    <tr>
+                        <td>Цех</td>
+                        <td>Разнорабочий</td>
+                        <td>2020</td>
+                    </tr>
+                    <tr>
+                        <td>Ресторан</td>
+                        <td>Официант</td>
+                        <td>2022</td>
+                    </tr>
+                    <tr>
+                        <td>Пятерочка</td>
+                        <td>Водитель</td>
+                        <td>2023</td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <ul class="list-link">
+                    <h2>Мои курсы</h2>
+                    <li>
+                        <a href="#">Получение профессии Frontend - разработчика </a>
+                    </li>
+                    <li>
+                        <a href="#">Все курсы</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div>
-            <label for="message">Сообщение</label>
-            <br>
-            <textarea type="message" id="message" placeholder="Введите ваше Сообщение" cols="30" rows="5"></textarea>
-            <br>
-            <input type="submit">
+
+        <div class="footer">
+            <h1 class="kontact">Связаться со мной</h1>
+            <form action="">  
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Имя</label> 
+                            <input type="text" id="name" placeholder="Введите ваше Имя">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">email</label> 
+                            <input type="email" id="email" placeholder="Введите ваш email">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Сообщение</label> 
+                        <textarea type="message" id="message" placeholder="Введите ваше Сообщение" cols="30" rows="5"></textarea>
+                        <br> 
+                    </div>
+                    <input class="btn" type="submit">
+            </form>
         </div>
-    </form>
-
-
-
-
+    </div>
 </body>
 </html>
